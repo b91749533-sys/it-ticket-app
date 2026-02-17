@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets – Gestionnaire de tickets d'assistance informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="wilaya-agadir.png">
+      </div>
+      <div class="header-title">
+        <div class="ar">ولاية جهة سوس ماسة – عمالة أكادير إداوتنان</div>
+        <div class="fr">Gestionnaire de tickets d'assistance informatique</div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="create.html">Créer un ticket</a>
+      <a href="list.html" class="active">Tickets</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Tickets</h1>
+
+    <div class="filter-bar">
+      <input type="text" placeholder="Rechercher…" aria-label="Rechercher">
+      <select aria-label="Filtrer par statut">
+        <option value="">Tous les statuts</option>
+        <option value="ouvert">Ouvert</option>
+        <option value="encours">En cours</option>
+        <option value="resolu">Résolu</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Demandeur</th>
+            <th>Catégorie</th>
+            <th>Priorité</th>
+            <th>Statut</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1010</td>
+            <td>Youssef A.</td>
+            <td>Logiciel</td>
+            <td>Basse</td>
+            <td><span class="badge badge-ouvert">Ouvert</span></td>
+            <td>16/02/2025</td>
+            <td><a href="ticket.html?id=1010" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1009</td>
+            <td>Karim Z.</td>
+            <td>Réseau</td>
+            <td>Haute</td>
+            <td><span class="badge badge-encours">En cours</span></td>
+            <td>16/02/2025</td>
+            <td><a href="ticket.html?id=1009" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1008</td>
+            <td>Nadia C.</td>
+            <td>Compte</td>
+            <td>Moyenne</td>
+            <td><span class="badge badge-resolu">Résolu</span></td>
+            <td>15/02/2025</td>
+            <td><a href="ticket.html?id=1008" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1007</td>
+            <td>Omar D.</td>
+            <td>Matériel</td>
+            <td>Haute</td>
+            <td><span class="badge badge-ouvert">Ouvert</span></td>
+            <td>15/02/2025</td>
+            <td><a href="ticket.html?id=1007" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1006</td>
+            <td>Leila F.</td>
+            <td>Logiciel</td>
+            <td>Basse</td>
+            <td><span class="badge badge-encours">En cours</span></td>
+            <td>15/02/2025</td>
+            <td><a href="ticket.html?id=1006" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1005</td>
+            <td>Ahmed B.</td>
+            <td>Matériel</td>
+            <td>Haute</td>
+            <td><span class="badge badge-encours">En cours</span></td>
+            <td>15/02/2025</td>
+            <td><a href="ticket.html?id=1005" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1004</td>
+            <td>Fatima M.</td>
+            <td>Logiciel</td>
+            <td>Moyenne</td>
+            <td><span class="badge badge-ouvert">Ouvert</span></td>
+            <td>14/02/2025</td>
+            <td><a href="ticket.html?id=1004" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1003</td>
+            <td>Mohamed K.</td>
+            <td>Réseau</td>
+            <td>Haute</td>
+            <td><span class="badge badge-resolu">Résolu</span></td>
+            <td>14/02/2025</td>
+            <td><a href="ticket.html?id=1003" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1002</td>
+            <td>Samira L.</td>
+            <td>Compte</td>
+            <td>Basse</td>
+            <td><span class="badge badge-resolu">Résolu</span></td>
+            <td>13/02/2025</td>
+            <td><a href="ticket.html?id=1002" class="btn btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td>#1001</td>
+            <td>Hassan T.</td>
+            <td>Matériel</td>
+            <td>Moyenne</td>
+            <td><span class="badge badge-encours">En cours</span></td>
+            <td>12/02/2025</td>
+            <td><a href="ticket.html?id=1001" class="btn btn-sm">Voir</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="container">
+    © 2026 Youssef Manssouri
+  </footer>
+</body>
+</html>

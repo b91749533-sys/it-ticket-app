@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer un ticket – Gestionnaire de tickets d'assistance informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="wilaya-agadir.png" >
+      </div>
+      <div class="header-title">
+        <div class="ar">ولاية جهة سوس ماسة – عمالة أكادير إداوتنان</div>
+        <div class="fr">Gestionnaire de tickets d'assistance informatique</div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="create.html" class="active">Créer un ticket</a>
+      <a href="list.html">Tickets</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Créer un ticket</h1>
+
+    <section class="form-section">
+      <form action="#" method="get">
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.ma" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <input type="text" id="service" name="service" placeholder="Ex. Ressources humaines">
+        </div>
+        <div class="form-group">
+          <label for="categorie">Catégorie</label>
+          <select id="categorie" name="categorie" required>
+            <option value="">Sélectionnez une catégorie</option>
+            <option value="materiel">Matériel</option>
+            <option value="logiciel">Logiciel</option>
+            <option value="reseau">Réseau</option>
+            <option value="compte">Compte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="priorite">Priorité</label>
+          <select id="priorite" name="priorite" required>
+            <option value="">Sélectionnez une priorité</option>
+            <option value="basse">Basse</option>
+            <option value="moyenne">Moyenne</option>
+            <option value="haute">Haute</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Décrivez votre problème ou demande en détail..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="piece">Pièce jointe</label>
+          <input type="file" id="piece" name="piece">
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+      <p class="note">Version démo : envoi non enregistré (HTML/CSS uniquement).</p>
+    </section>
+  </main>
+  <footer class="container">
+    © 2026 Youssef Manssouri
+  </footer>
+</body>
+</html>
